@@ -26,6 +26,24 @@
 #include <ConvertEncoding>
 ```
 
+# วิธีการใช้งาน (นี่คือตัวอย่างเท่านั้น)
+```Pawn
+#include <open.mp>
+#include <ConvertEncoding>
+
+public OnPlayerConnect(playerid) {
+    new string[100] = "สวัสดีนะจ๊ะจ๊ะจ๊ะ";
+    new output[100], output2[100];
+
+    ConvertEncoding(string, TIS620, UTF8, output);  // อันนี้ TIS-620 ไปเป็น UTF-8
+    ConvertEncoding(output, UTF8, TIS620, output2); // อันนี้ UTF-8 ไปเป็น TIS-620
+
+    SendClientMessage(playerid, COLOR_RED, output);
+    SendClientMessage(playerid, COLOR_RED, output2);
+    return 1;
+}
+```
+
 ## การบิ้ว
 
 ## Sources
