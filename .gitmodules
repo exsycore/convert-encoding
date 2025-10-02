@@ -1,0 +1,6 @@
+[submodule "Libs/open.mp-sdk"]
+	path = Libs/open.mp-sdk
+	url = https://github.com/openmultiplayer/open.mp-sdk
+[submodule "Libs/samp-ptl"]
+	path = Libs/samp-ptl
+	url = https://github.com/katursis/samp-ptl
