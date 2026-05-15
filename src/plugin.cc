@@ -1,7 +1,7 @@
 #include "plugin.h"
 
-const char* Plugin::Name() { return "C2U Plugin (open.mp)"; }
-int Plugin::Version() { return PACK_PLUGIN_VERSION(1, 0, 0); }
+const char* Plugin::Name() { return "encore Plugin (open.mp)"; }
+int Plugin::Version() { return PACK_PLUGIN_VERSION(2, 0, 0); }
 
 bool Plugin::OnLoad() {
     RegisterNative<&Script::ConvertEncoding>("ConvertEncoding");
@@ -16,5 +16,5 @@ bool Plugin::OnLoad() {
 }
 
 void Plugin::OnUnload() {
-    Log("C2U v1.0 (open.mp) unloaded");
+    Log("encore v2.0 (open.mp) unloaded");
 }

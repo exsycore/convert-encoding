@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <cstdarg>
 #include <sdk.hpp>
 #include <Server/Components/Pawn/pawn.hpp>
 
