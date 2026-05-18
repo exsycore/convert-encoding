@@ -10,3 +10,11 @@ RUN dpkg --add-architecture i386 && \
     git
 
 WORKDIR /app
+
+COPY . .
+
+RUN git submodule update --init --recursive
+
+RUN mkdir build && cd build && \
+    cmake -DCMAKE_BUILD_TYPE=Release .. && \
+    make -j$(nproc)

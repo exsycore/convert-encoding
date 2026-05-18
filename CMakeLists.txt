@@ -1,6 +1,4 @@
 cmake_minimum_required(VERSION 3.20)
 project(encore LANGUAGES C CXX VERSION 1.0)
 
-add_subdirectory(libs/open.mp-sdk)
-
 add_subdirectory(src)

@@ -20,7 +20,3 @@ target_include_directories(${PROJECT_NAME} PRIVATE
     ${CMAKE_SOURCE_DIR}/libs
     ${CMAKE_SOURCE_DIR}/libs/samp-ptl
 )
-
-target_link_libraries(${PROJECT_NAME} PRIVATE
-    OMP-SDK
-)
