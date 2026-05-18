@@ -5,7 +5,7 @@
 
 ปลั๊กอิน Convert Encoding ช่วยแปลงให้ข้อความของคุณเป็น Encoding อื่นๆเช่น UTF-8 ได้หรือสามารถแปลงกลับไปเป็น TIS-620 ได้เลย
 
-## การติดตั้ง (open.mp)
+## การติดตั้ง (SA:MP)
 * นำไฟล์ [encore.dll](encore.dll) ใส่ในโฟลเดอร์ plugins ของคุณ (เพิ่มบรรทัด plugins ขึ้นมาแล้วพิมพ์ต่อว่า encore.dll)
 ```bash
 │ GameMode/
