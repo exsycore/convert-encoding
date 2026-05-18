@@ -6,29 +6,29 @@
 ปลั๊กอิน Convert Encoding ช่วยแปลงให้ข้อความของคุณเป็น Encoding อื่นๆเช่น UTF-8 ได้หรือสามารถแปลงกลับไปเป็น TIS-620 ได้เลย
 
 ## การติดตั้ง (open.mp)
-* นำไฟล์ [encore.dll](encore.dll) ใส่ในโฟลเดอร์ components ของคุณ (ไม่ต้องเพิ่มอะไร config.json สามารถใช้งานได้เลย)
+* นำไฟล์ [encore.dll](encore.dll) ใส่ในโฟลเดอร์ plugins ของคุณ (เพิ่มบรรทัด plugins ขึ้นมาแล้วพิมพ์ต่อว่า encore.dll)
 ```bash
 │ GameMode/
-├── components/
+├── plugins/
 │   └── encore.dll
 ```
 
-* นำไฟล์ [ConvertEncoding.inc](https://github.com/exsycore/convert-encoding/blob/master/Source/ConvertEncoding.inc) ใส่ในโฟลเดอร์ Includes ของคุณ
+* นำไฟล์ [ConvertEncoding.inc](https://github.com/exsycore/convert-encoding/blob/samp/src/ConvertEncoding.inc) ใส่ในโฟลเดอร์ Includes ของคุณ
 ```bash
-│ qawno/
+│ pawno/
 ├── include/
 │   └── ConvertEncoding.inc
 ```
 
 * การติดตั้ง
 ```Pawn
-#include <open.mp>
+#include <a_samp>
 #include <ConvertEncoding>
 ```
 
 # วิธีการใช้งาน (นี่คือตัวอย่างเท่านั้น)
 ```Pawn
-#include <open.mp>
+#include <a_samp>
 #include <ConvertEncoding>
 
 public OnPlayerConnect(playerid) {
@@ -53,6 +53,6 @@ git clone --recursive https://github.com/exsycore/convert-encoding.git
 
 ## Building on Windows
 ```bash
-cmake -B build -A Win32 -T ClangCL
+cmake -B build -A Win32
 cmake --build build
 ```
